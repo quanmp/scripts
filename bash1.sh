@@ -9,3 +9,7 @@
 ## Find open file descriptor of a process
 # lsof -p PID
 # ls -l /proc/PID/fd
+
+# run virtualBox instance in background
+ VBoxManage.exe startvm centos --type headless
+ 
