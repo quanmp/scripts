@@ -1,0 +1,42 @@
+#git command line reminder...
+
+
+#########################
+# github: create a new repository on the command line
+
+echo "# readme" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/quanmp/card-demo.git
+git push -u origin master
+
+######################
+
+# push an existing repository from the command line
+git remote add origin https://github.com/quanmp/card-demo.git
+git push -u origin master
+
+########################
+# reset all change
+git reset --hard origin/master
+
+# view change before add
+git diff myFile.txt
+
+# view change after added, compare with previous commit
+git diff -cached file.txt
+
+# to display and track change commit on each line of a file
+git blame file.txt
+
+# checkout github project
+$ git clone https://github.com/quanmp/card-demo.git
+
+# remove adding change to file to git commit, undo git add change by
+git add file.txt
+
+# way1
+git reset file.txt
+#way2
+git reset
